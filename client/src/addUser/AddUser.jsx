@@ -25,7 +25,7 @@ const AddUser = () => {
         e.preventDefault();
         
         try {
-            const response = await axios.post("https://cruds-ypju.onrender.com/api/users", user);
+            const response = await axios.post("https://cruds-ypju.onrender.com/api/user", user);
             toast.success(response.data.message, { position: "top-right" });
             setUser(users); // Reset form after successful submission
             navigate("/"); // Redirect to home or any other page
