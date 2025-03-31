@@ -10,7 +10,7 @@ function User() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://localhost:4000/api/users");
+        const response = await axios.get("https://cruds-ypju.onrender.com");
         setUser(response.data);
       } catch (error) {
         console.log("Error when fetching data:", error);
