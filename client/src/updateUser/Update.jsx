@@ -15,7 +15,7 @@ const Update = () => {
     const navigate = useNavigate();
     const {id} = useParams() 
     useEffect(()=>{
-        axios.get(`http://localhost:4000/api/user/${id}`)
+        axios.get(`https://cruds-ypju.onrender.com${id}`)
         .then((response)=>{
             setUser(response.data)
         })
